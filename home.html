@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg conColorNav shadow p-2">
+  <div class="container-fluid">
+      <a class="navbar-brand text-white" href="./home.html">SMART LOGIN</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto my-2 mb-lg-0 ">
+        <li class="nav-item">
+            <button class="btn" id="logoutBtn" onclick="logout()">Logout</button>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <div class="container mx-auto my-5 p-5 shadow rounded conColor text-white">
+    <h1 class="text-center mb-4">Welcome <span id="username"></span></h1>
+    <p id="alertBox" class="text-center mt-3"></p>
+  </div>
+
+  <script src="./JS/home.js"></script>
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>

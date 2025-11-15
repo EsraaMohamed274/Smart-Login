@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Login System</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+  <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+  <div class="container mx-auto my-5 p-5 shadow rounded conColor">
+    <h1 class="text-center">Smart Login System</h1>
+
+        <form >
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="userInputName"
+              placeholder="Enter your name"
+              oninput="validateInputs(this)"
+            />
+            <div class="text-danger d-none">Invalid name (min 3 letters)</div>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="userInputEmail"
+              placeholder="Enter your email"
+              oninput="validateInputs(this)"
+            />
+            <div class="text-danger d-none">Invalid email</div>
+          </div>
+
+          <div class="mb-3">
+            <input
+              type="password"
+              class="form-control"
+              id="userInputPassword"
+              placeholder="Enter your password"
+              oninput="validateInputs(this)"
+            />
+            <div class="text-danger d-none">
+              Password must contain at least 8 characters, uppercase, lowercase, number & special character
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-primary form-control my-3"
+            id="signupBtn"
+            onclick="addUser()"
+          >
+            Sign Up
+          </button>
+
+          <p class="text-white text-center">
+            Already have an account?
+            <a class="text-white text-decoration-none" href="./index.html">Signin</a>
+          </p>
+
+          <p id="alertBox" class="text-center mt-2"></p>
+        </form>
+
+
+  <script src="./JS/bootstrap.bundle.min.js"></script>
+  <script src="./JS/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+  background-color: #24353f;
+  margin: 0;
+}
+
+.conColorNav {
+  background-color: #24353f;
+}
+
+.conColor {
+  background-color: #24353f;
+  width: 65%;
+}
+
+.conColor h1 {
+  color: #17a2b8;
+  font-size: 40px;
+}
+
+.conColor input {
+  background-color: #24353f;
+  color: white;
+  border: 1px solid #ffffff;
+}
+.conColor input::placeholder {
+  color: #cecbcb;
+}
+
+.conColor button {
+  background-color: #24353f;
+  color: #17a2b8;
+  border: 1px solid #17a2b8;
+}
+
+.conColor button:hover {
+  background-color: #17a2b8;
+  color: #ffffff;
+  border: 1px solid #17a2b8;
+}
+
+.conColorNav #logoutBtn {
+  background-color: #24353f;
+  color: #bdd0db;
+  border: 1px solid yellow;
+   width: 100%;
+}
+
+.conColorNav #logoutBtn:hover {
+  background-color: yellow;
+  color: #ffffff;
+  border: 1px solid yellow;
+}
